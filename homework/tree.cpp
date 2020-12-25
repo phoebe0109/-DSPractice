@@ -6,13 +6,13 @@ struct node
     char data;
     struct node* left;
     struct node* right;
-}
-void breadthFirst(node*);
+};
+//void breadthFirst(node*);
 void preorder(node*);
 void inorder(node*);
 void postorder(node*);
 int main(void){
- 
+  
   node *root,*p1,*p2,*p3,*p4,*p5,*p6,*p7;
   p1=new node;
   p1->data='1';
@@ -43,14 +43,23 @@ int main(void){
   p6->right=NULL;
   p7->left=NULL;
   p7->right=NULL;
+  //breadthFirst(root);
+  //cout << endl;
   preorder(root);
   cout << endl;
   inorder(root);
   cout << endl;
   postorder(root);
   cout << endl;
+  
 }
-void
+//void breadthFirst(node *p){
+    
+  //if(p) {
+   //cout << 
+     
+  
+      
 void preorder(node *p){
   if(p) {
     cout << p->data << " ";
